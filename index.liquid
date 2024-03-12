@@ -1,7 +1,100 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Fragrance Catalog
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<div class="flex flex-col justify-center bg-blue-100 p-16">
+    <h1 class="text-7xl font-semibold text-center text-gray-800 mb-8">Fragrance Catalog</h1>
+
+    <div class="space-y-10">
+        <div class="bg-white p-6 ">
+            <div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/11', jsonitem='thumbnail')}">
+                <img alt="thumbnail" x-bind:src="thumbImage" class="mx-auto mb-3"/>
+
+                <div x-data="{brand: $fetchjson('https://dummyjson.com/products/11', jsonitem='brand')}">
+                    <p x-text="brand" class="text-lg font-medium text-gray-700 text-center"></p>
+                </div>
+
+                <div x-data="{description: $fetchjson('https://dummyjson.com/products/11', jsonitem='description')}">
+                    <p x-text="description" class="text-sm text-gray-600 text-center mt-2"></p>
+                </div>
+
+                <div x-data="{price: $fetchjson('https://dummyjson.com/products/11', jsonitem='price')}">
+                     <p class="text-lg text-gray-800 text-center mt-2">Price: $<span x-text="price"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 ">
+            <div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/12', jsonitem='thumbnail')}">
+                <img alt="thumbnail" x-bind:src="thumbImage" class="mx-auto mb-3"/>
+
+                <div x-data="{brand: $fetchjson('https://dummyjson.com/products/12', jsonitem='brand')}">
+                    <p x-text="brand" class="text-lg font-medium text-gray-700 text-center"></p>
+                </div>
+
+                <div x-data="{description: $fetchjson('https://dummyjson.com/products/12', jsonitem='description')}">
+                    <p x-text="description" class="text-sm text-gray-600 text-center mt-2"></p>
+                </div>
+
+                <div x-data="{price: $fetchjson('https://dummyjson.com/products/12', jsonitem='price')}">
+                     <p class="text-lg text-gray-800 text-center mt-2">Price: $<span x-text="price"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 ">
+            <div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/13', jsonitem='thumbnail')}">
+                <img alt="thumbnail" x-bind:src="thumbImage" class="mx-auto mb-3"/>
+
+                <div x-data="{brand: $fetchjson('https://dummyjson.com/products/13', jsonitem='brand')}">
+                    <p x-text="brand" class="text-lg font-medium text-gray-700 text-center"></p>
+                </div>
+
+                <div x-data="{description: $fetchjson('https://dummyjson.com/products/13', jsonitem='description')}">
+                    <p x-text="description" class="text-sm text-gray-600 text-center mt-2"></p>
+                </div>
+
+                <div x-data="{price: $fetchjson('https://dummyjson.com/products/13', jsonitem='price')}">
+                     <p class="text-lg text-gray-800 text-center mt-2">Price: $<span x-text="price"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 ">
+            <div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/14', jsonitem='thumbnail')}">
+                <img alt="thumbnail" x-bind:src="thumbImage" class="mx-auto mb-3"/>
+
+                <div x-data="{brand: $fetchjson('https://dummyjson.com/products/14', jsonitem='brand')}">
+                    <p x-text="brand" class="text-lg font-medium text-gray-700 text-center"></p>
+                </div>
+
+                <div x-data="{description: $fetchjson('https://dummyjson.com/products/14', jsonitem='description')}">
+                    <p x-text="description" class="text-sm text-gray-600 text-center mt-2"></p>
+                </div>
+
+                <div x-data="{price: $fetchjson('https://dummyjson.com/products/14', jsonitem='price')}">
+                     <p class="text-lg text-gray-800 text-center mt-2">Price: $<span x-text="price"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 ">
+            <div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/15', jsonitem='thumbnail')}">
+                <img alt="thumbnail" x-bind:src="thumbImage" class="mx-auto mb-3"/>
+
+                <div x-data="{brand: $fetchjson('https://dummyjson.com/products/15', jsonitem='brand')}">
+                    <p x-text="brand" class="text-lg font-medium text-gray-700 text-center"></p>
+                </div>
+
+                <div x-data="{description: $fetchjson('https://dummyjson.com/products/15', jsonitem='description')}">
+                    <p x-text="description" class="text-sm text-gray-600 text-center mt-2"></p>
+                </div>
+
+                <div x-data="{price: $fetchjson('https://dummyjson.com/products/15', jsonitem='price')}">
+                     <p class="text-lg text-gray-800 text-center mt-2">Price: $<span x-text="price"></span></p>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
